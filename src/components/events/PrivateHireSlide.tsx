@@ -6,13 +6,13 @@ const hireOptions = [{
   capacity: "150 standing / 80 seated",
   description: "Complete exclusivity for your event"
 }, {
-  title: "Partial Hire",
-  capacity: "50–80 guests",
-  description: "Private area with dedicated service"
-}, {
   title: "Private Dining",
-  capacity: "12–20 seated",
+  capacity: "25–30 seated",
   description: "Intimate dinner experience"
+}, {
+  title: "Press Coverage",
+  capacity: "Daily Mail, Evening Standard, Metro and more",
+  description: "Extensive media reach for your event"
 }];
 export const PrivateHireSlide = () => {
   return <SectionWrapper className="bg-gradient-section">

@@ -20,29 +20,14 @@ export const BrettWattertonSlide = () => {
           Brett <span className="italic text-gradient-gold">Watterton</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center md:grid-flow-dense">
           {/* Image with filter */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative aspect-square overflow-hidden rounded"
-          >
-            <img
-              src={brettImage}
-              alt="Brett Watterton"
-              className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] brightness-[0.9]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-          </motion.div>
-
           {/* Bio */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             className="space-y-6"
           >
             <p className="text-muted-foreground font-body leading-relaxed text-lg">
@@ -54,6 +39,22 @@ export const BrettWattertonSlide = () => {
             <p className="text-muted-foreground font-body leading-relaxed">
               Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel's as a late-night destination for culture, creativity, and exceptional cocktails.
             </p>
+          </motion.div>
+
+          {/* Image with filter */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative aspect-square overflow-hidden rounded md:col-start-2"
+          >
+            <img
+              src={brettImage}
+              alt="Brett Watterton"
+              className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] brightness-[0.9]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
           </motion.div>
         </div>
       </div>

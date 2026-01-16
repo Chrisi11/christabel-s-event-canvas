@@ -94,6 +94,11 @@ Execution
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Execution</h4>
                 <p className="text-muted-foreground font-body">Full cocktail menu takeover featuring bespoke creations, prominent brand displays including backdrop and fireplace scent station. Live acoustic performance from The Molotovs, guided tasting by Brett Watterton, and exclusive member/celebrity access.</p>
               </div>
+
+              <div>
+                <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Media Impact</h4>
+                <p className="text-muted-foreground font-body">Coverage in the Daily Mail, Mail on Sunday, and Evening Standard Londoner's Diary the following day.</p>
+              </div>
             </div>
 
             {/* Outcomes */}

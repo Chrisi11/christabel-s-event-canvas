@@ -42,12 +42,11 @@ export const ProductionSlide = () => {
         </motion.span>
 
         <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-6 text-center">
-          Production & <span className="italic text-gradient-gold">Support</span>
+          Production & <span className="italic text-gradient-gold">PR Support</span>
         </h2>
 
-        <p className="text-muted-foreground font-body text-lg text-center mb-16 max-w-2xl mx-auto">We understand the demands of agency and brand events. 
-Our team provides comprehensive production support including PR and Publicity services to ensure flawless execution.
-
+        <p className="text-muted-foreground font-body text-lg text-center mb-16 max-w-2xl mx-auto">We understand the demands of agency and brand events.  
+Our team provides comprehensive production support including PR & Publicity services to ensure flawless execution.
       </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

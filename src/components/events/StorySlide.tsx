@@ -59,13 +59,13 @@ export const StorySlide = () => {
         </h2>
         
         <div className="space-y-6 text-muted-foreground font-body text-lg leading-relaxed">
-          <p className="">Born in 2020 in the historic Fulham Town Hall, Christabel’s emerged from lockdown as London’s avant-garde antidote to conventional, affluence-obsessed members’ clubs. 
+          <p className="">Born in 2020 in the historic Fulham Town Hall, Christabel’s emerged from lockdown as London’s avant-garde antidote to conventional, affluence-obsessed members’ clubs.  A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets with life imitating art at every turn. 
 
-A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets — life imitating art at every turn. From Fitzrovia to Soho, including a secret club beneath the historic Windmill Theatre, Christabel’s has become a haven for musicians, artists, filmmakers and bohemians rebelling against cultural homogenisation.
+From Fitzrovia to Soho, including a secret club beneath the historic Windmill Theatre, Christabel’s has become a sanctuary for musicians, artists, filmmakers and bohemians rebelling against cultural homogenisation.  
 
- Past performers and guests include: The Molotovs, Black Sabbath, Babyshambles, The Kooks, Shane McGowan, Dexy’s Midnight Runners, Paul Oakenfold… 
+Past performers and guests include: The Molotovs, Black Sabbath, Babyshambles, The Kooks, Shane McGowan, Dexy’s Midnight Runners, Paul Oakenfold…  
 
-Now, off Oxford Circus, with a full band stage and late-night liquor licence, Christabel’s lets London’s wild, creative, and bohemian spirits pick up the beat — anytime, anywhere. 
+Now, off Oxford Circus, with a full band stage and late-night liquor licence, Christabel’s lets London’s wild, creative, and bohemian spirits pick up the beat. 
         </p>
           <p>
         </p>
@@ -74,7 +74,7 @@ Now, off Oxford Circus, with a full band stage and late-night liquor licence, Ch
         <div className="mt-16 flex items-center justify-center gap-8 text-muted-foreground text-sm tracking-widest uppercase font-body">
           <span>Music</span>
           <span className="w-1 h-1 rounded-full bg-gold" />
-          <span>Cocktails</span>
+          <span>MEDIA</span>
           <span className="w-1 h-1 rounded-full bg-gold" />
           <span>Art</span>
           <span className="w-1 h-1 rounded-full bg-gold" />

@@ -59,8 +59,7 @@ export const CoverSlide = () => {
         delay: 1.2
       }} className="space-y-2 text-muted-foreground font-body text-sm tracking-wide">
           <p>4 Winsley Street</p>
-          <p>London W1W 8HF 
-
+          <p>London W1W 8HF  
 www.christabels.com
         </p>
         </motion.div>

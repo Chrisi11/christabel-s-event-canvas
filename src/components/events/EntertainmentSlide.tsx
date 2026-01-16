@@ -98,29 +98,11 @@ export const EntertainmentSlide = () => {
             Beverage Director
           </span>
           <h3 className="font-display text-3xl text-foreground mb-4">Brett Watterton</h3>
-          <p className="text-muted-foreground font-body leading-relaxed">With global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey.
+          <p className="text-muted-foreground font-body leading-relaxed">With over a decade of global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey. 
 
-Brett Watterton brings over a decade of experience shaping award-winning cocktail programmes and hospitality concepts across North America and the UK. A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the World’s 50 Best Bars, and collaborated with prestigious private members’ clubs such as Soho House and The RAC Club.
+ A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the World’s 50 Best Bars, and collaborated with prestigious clubs such as Soho House and The RAC Club.
 
-Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive — setting the tone for Christabel’s as a late-night destination for culture, creativity, and exceptional cocktails.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel’s as a late-night destination for culture, creativity, and exceptional cocktails.
         </p>
         </motion.div>
       </div>

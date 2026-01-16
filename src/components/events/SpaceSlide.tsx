@@ -4,7 +4,7 @@ import cocktailBar from "@/assets/cocktail-bar.jpg";
 import privateDining from "@/assets/private-dining.jpg";
 const spaceDetails = [{
   label: "Standing Capacity",
-  value: "150"
+  value: "150/200"
 }, {
   label: "Seated Capacity",
   value: "80"

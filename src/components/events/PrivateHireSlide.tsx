@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-import privateDining from "@/assets/private-dining.jpg";
+import privateDining from "@/assets/private-dining-new.jpg";
 const hireOptions = [{
   title: "Full Venue",
   capacity: "150 standing / 80 seated",
@@ -9,10 +9,6 @@ const hireOptions = [{
   title: "Private Dining",
   capacity: "25–30 seated",
   description: "Intimate dinner experience"
-}, {
-  title: "Press Coverage",
-  capacity: "Daily Mail, Evening Standard, Metro and more",
-  description: "Extensive media reach for your event"
 }];
 export const PrivateHireSlide = () => {
   return <SectionWrapper className="bg-gradient-section">

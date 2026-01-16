@@ -13,7 +13,7 @@ import {
 
 const eventFormats = [
   { icon: Sparkles, title: "Brand Launches", description: "Make your debut unforgettable" },
-  { icon: Wine, title: "Cocktail Menu Launches", description: "Curated tastings & reveals" },
+  { icon: Wine, title: "Film Premiere Afterparties", description: "Discreet Central London for after parties" },
   { icon: Music, title: "Live Music & Showcases", description: "Intimate artist performances" },
   { icon: Radio, title: "Listening Parties", description: "Album & single premieres" },
   { icon: Mic2, title: "Panel Talks & Podcasts", description: "Cultural conversations" },

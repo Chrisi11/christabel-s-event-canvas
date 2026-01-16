@@ -81,18 +81,6 @@ export const ContactSlide = () => {
         delay: 0.6
       }} className="w-24 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-16" />
 
-        <motion.p initial={{
-        opacity: 0
-      }} whileInView={{
-        opacity: 1
-      }} viewport={{
-        once: true
-      }} transition={{
-        duration: 0.8,
-        delay: 0.8
-      }} className="text-muted-foreground text-xs font-body tracking-widest uppercase mt-8">
-          Where the Night Comes Alive
-        </motion.p>
       </div>
     </section>;
 };

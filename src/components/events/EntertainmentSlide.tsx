@@ -30,7 +30,7 @@ export const EntertainmentSlide = () => {
             transition={{ duration: 0.8 }}
             className="relative aspect-square overflow-hidden rounded"
           >
-            <img src={djImage} alt="DJ at Christabel's" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
+            <img src={djImage} alt="DJ at Christabel's" className="w-full h-full object-cover object-[60%_60%] sepia-[15%] saturate-[1.1] brightness-[0.85] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-sm tracking-widest uppercase font-body">DJs & Selectors</span>
@@ -45,7 +45,7 @@ export const EntertainmentSlide = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative aspect-square overflow-hidden rounded"
           >
-            <img src={liveMusic} alt="Live Music Performance" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
+            <img src={liveMusic} alt="Live Music Performance" className="w-full h-full object-cover object-[60%_40%] sepia-[15%] saturate-[1.1] brightness-[0.85] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-sm tracking-widest uppercase font-body">Live Performance</span>

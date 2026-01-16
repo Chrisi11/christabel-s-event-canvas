@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import djImage from "@/assets/dj-curated.jpg";
 import liveMusic from "@/assets/live-performance.jpg";
-const entertainmentTypes = ["Live Musicians", "Resident & Guest DJs", "Spoken Word Artists", "Cultural Performances", "Walk-Through Tastings"];
+const entertainmentTypes = ["Live Musicians", "Resident & Celebrity DJs", "Vinyl & Pioneer Decks", "Curated Burlesque"];
 export const EntertainmentSlide = () => {
   return (
     <SectionWrapper className="bg-gradient-section">

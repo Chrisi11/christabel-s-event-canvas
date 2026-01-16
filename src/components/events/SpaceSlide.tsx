@@ -10,8 +10,8 @@ const spaceDetails = [{
   label: "Seated Capacity",
   value: "80"
 }, {
-  label: "Bar Area",
-  value: "40"
+  label: "Late Licence",
+  value: "Until 4am"
 }, {
   label: "Stage Area",
   value: "Live Ready"

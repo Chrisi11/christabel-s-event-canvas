@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import micalefEvent1 from "@/assets/micalef-event-1.jpg";
 import micalefEvent2 from "@/assets/micalef-event-2.jpg";
-import micalefEvent3 from "@/assets/micalef-event-3.jpg";
+import djEntertainment from "@/assets/dj-entertainment.jpg";
+import pressClipping from "@/assets/press-clipping.jpg";
 
 const outcomes = [{
   metric: "150+",
@@ -18,10 +19,14 @@ const outcomes = [{
   label: "Brand Recall"
 }];
 
-const eventImages = [
+const portraitImages = [
   { src: micalefEvent1, alt: "Maison Micalef Launch Event" },
   { src: micalefEvent2, alt: "Maison Micalef Event Guests" },
-  { src: micalefEvent3, alt: "Maison Micalef Event Atmosphere" },
+];
+
+const bottomImages = [
+  { src: djEntertainment, alt: "DJ Entertainment" },
+  { src: pressClipping, alt: "Press Coverage - The London Standard" },
 ];
 
 export const CaseStudySlide = () => {
@@ -52,19 +57,23 @@ export const CaseStudySlide = () => {
         }} transition={{
           duration: 0.8
         }} className="space-y-3">
-            {/* Main large image */}
-            <div className="relative aspect-[16/10] overflow-hidden rounded">
-              <img 
-                src={eventImages[0].src} 
-                alt={eventImages[0].alt} 
-                className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/5" />
-            </div>
-            {/* Two smaller images side by side */}
+            {/* Two portrait images side by side */}
             <div className="grid grid-cols-2 gap-3">
-              {eventImages.slice(1).map((image, index) => (
+              {portraitImages.map((image, index) => (
+                <div key={index} className="relative aspect-[3/4] overflow-hidden rounded">
+                  <img 
+                    src={image.src} 
+                    alt={image.alt} 
+                    className="w-full h-full object-contain sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/5" />
+                </div>
+              ))}
+            </div>
+            {/* DJ and press images side by side */}
+            <div className="grid grid-cols-2 gap-3">
+              {bottomImages.map((image, index) => (
                 <div key={index} className="relative aspect-[4/3] overflow-hidden rounded">
                   <img 
                     src={image.src} 

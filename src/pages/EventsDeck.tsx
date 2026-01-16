@@ -7,6 +7,7 @@ import { BrandCollaborationsSlide } from "@/components/events/BrandCollaboration
 import { CaseStudySlide } from "@/components/events/CaseStudySlide";
 import { EntertainmentSlide } from "@/components/events/EntertainmentSlide";
 import { BrettWattertonSlide } from "@/components/events/BrettWattertonSlide";
+import { JamesonStocksSlide } from "@/components/events/JamesonStocksSlide";
 import { EventProductionSlide } from "@/components/events/EventProductionSlide";
 import { PRSupportSlide } from "@/components/events/PRSupportSlide";
 import { PrivateHireSlide } from "@/components/events/PrivateHireSlide";
@@ -26,6 +27,7 @@ const EventsDeck = () => {
       <CaseStudySlide />
       <EntertainmentSlide />
       <BrettWattertonSlide />
+      <JamesonStocksSlide />
       <EventProductionSlide />
       <PRSupportSlide />
       <PrivateHireSlide />

@@ -2,8 +2,7 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import micalefEvent1 from "@/assets/micalef-event-1.jpg";
 import micalefEvent2 from "@/assets/micalef-event-2.jpg";
-import djEntertainment from "@/assets/dj-entertainment.jpg";
-import pressClipping from "@/assets/press-clipping.jpg";
+import micalefPerfume from "@/assets/micalef-perfume.jpg";
 
 const outcomes = [{
   metric: "150+",
@@ -22,11 +21,6 @@ const outcomes = [{
 const portraitImages = [
   { src: micalefEvent1, alt: "Maison Micalef Launch Event" },
   { src: micalefEvent2, alt: "Maison Micalef Event Guests" },
-];
-
-const bottomImages = [
-  { src: djEntertainment, alt: "DJ Entertainment" },
-  { src: pressClipping, alt: "Press Coverage - The London Standard" },
 ];
 
 export const CaseStudySlide = () => {
@@ -71,19 +65,14 @@ export const CaseStudySlide = () => {
                 </div>
               ))}
             </div>
-            {/* DJ and press images side by side */}
-            <div className="grid grid-cols-2 gap-3">
-              {bottomImages.map((image, index) => (
-                <div key={index} className="relative aspect-[4/3] overflow-hidden rounded">
-                  <img 
-                    src={image.src} 
-                    alt={image.alt} 
-                    className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" 
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/5" />
-                </div>
-              ))}
+            {/* Perfume product image */}
+            <div className="relative aspect-[16/9] overflow-hidden rounded">
+              <img 
+                src={micalefPerfume} 
+                alt="Maison Micalef Perfume" 
+                className="w-full h-full object-cover" 
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
           </motion.div>
 

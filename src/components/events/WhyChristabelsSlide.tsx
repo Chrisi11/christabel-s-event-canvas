@@ -49,7 +49,7 @@ export const WhyChristabelsSlide = () => {
       }} transition={{
         duration: 0.8,
         delay: 0.6
-      }} className="font-display text-2xl md:text-3xl text-muted-foreground italic leading-relaxed">“Christabel’s is renowned for its evenings of avant garde entertainment and indulgence, live music and burlesque geared towards the most creative and eccentric of London’s social sets.” — Luxury London   <span className="text-foreground">    Luxury Lon    </span>  that resonate."
+      }} className="font-display text-2xl md:text-3xl text-muted-foreground italic leading-relaxed">“Christabel’s is renowned for its evenings of avant garde entertainment and indulgence, live music and burlesque geared towards the most creative and eccentric of London’s social sets.” — Luxury London   <span className="text-foreground">    Luxury Lon    </span>  ​
         
         </motion.p>
       </div>

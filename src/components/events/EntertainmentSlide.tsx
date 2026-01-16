@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-import djImage from "@/assets/dj-entertainment.jpg";
-import liveMusic from "@/assets/live-music.jpg";
+import vipGuests from "@/assets/vip-guests.jpg";
+import livePerformance from "@/assets/live-performance.jpg";
 const entertainmentTypes = ["Live Musicians", "Resident & Guest DJs", "Spoken Word Artists", "Cultural Performances", "Walk-Through Tastings"];
 export const EntertainmentSlide = () => {
   return <SectionWrapper className="bg-gradient-section">
@@ -35,7 +35,7 @@ export const EntertainmentSlide = () => {
         }} transition={{
           duration: 0.8
         }} className="relative aspect-square overflow-hidden rounded">
-            <img src={djImage} alt="DJ at Christabel's" className="w-full h-full object-cover" />
+            <img src={vipGuests} alt="DJ at Christabel's" className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-sm tracking-widest uppercase font-body">DJs & Selectors</span>
@@ -55,7 +55,7 @@ export const EntertainmentSlide = () => {
           duration: 0.8,
           delay: 0.2
         }} className="relative aspect-square overflow-hidden rounded">
-            <img src={liveMusic} alt="Live Music Performance" className="w-full h-full object-cover" />
+            <img src={livePerformance} alt="Live Music Performance" className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-sm tracking-widest uppercase font-body">Live Performance</span>

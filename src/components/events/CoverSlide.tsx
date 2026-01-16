@@ -23,11 +23,7 @@ export const CoverSlide = () => {
         duration: 1,
         delay: 0.3
       }}>
-          <img 
-            src={christabelsLogo} 
-            alt="Christabel's" 
-            className="h-32 md:h-48 lg:h-64 w-auto mb-6 mx-auto"
-          />
+          <img src={christabelsLogo} alt="Christabel's" className="h-32 md:h-48 lg:h-64 w-auto mb-6 mx-auto" />
         </motion.div>
         
         <motion.p initial={{
@@ -63,7 +59,7 @@ export const CoverSlide = () => {
         delay: 1.2
       }} className="space-y-2 text-muted-foreground font-body text-sm tracking-wide">
           <p>4 Winsley Street</p>
-          <p>Soho, London W1W 8HF
+          <p>London W1W 8HF 
 
 www.christabels.com
         </p>

@@ -60,7 +60,7 @@ export const CaseStudySlide = () => {
           delay: 0.2
         }}>
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-2">
-              Christabel's Launch  <span className="text-gold">​with</span> Coracho Tequila
+              Christabel's Launch  <span className="text-gold">x</span> Maison Micalef Parfums  
             </h2>
             <p className="text-muted-foreground font-body mb-8">Winter 2025</p>
 

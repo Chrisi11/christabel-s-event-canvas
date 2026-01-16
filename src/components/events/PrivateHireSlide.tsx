@@ -78,7 +78,7 @@ export const PrivateHireSlide = () => {
         duration: 0.6
       }} className="text-center space-y-4">
           <p className="text-muted-foreground font-body">
-            <span className="text-foreground">Typical hire windows:</span> 6pm – Late
+            <span className="text-foreground">Typical hire windows:</span> 6pm – 4am
           </p>
           <p className="text-muted-foreground font-body">
             <span className="text-foreground">Day-to-night formats available</span> for extended programming

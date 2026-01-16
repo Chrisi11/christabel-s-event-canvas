@@ -52,7 +52,7 @@ export const BrettWattertonSlide = () => {
             <img
               src={brettImage}
               alt="Brett Watterton"
-              className="w-full h-full object-cover grayscale-[20%] contrast-[1.1] brightness-[0.9]"
+              className="w-full h-full object-cover grayscale-[30%] contrast-[1.05] brightness-[0.85] saturate-[0.9] blur-[0.3px]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
           </motion.div>

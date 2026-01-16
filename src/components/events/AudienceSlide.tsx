@@ -1,9 +1,22 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
+import audienceParty from "@/assets/audience-party.jpg";
+
 const audienceTypes = ["Creative Directors", "Founders", "Artists", "Tastemakers", "Fashion", "Music", "Media", "Culture"];
+
 export const AudienceSlide = () => {
-  return <SectionWrapper className="bg-gradient-section">
-      <div className="max-w-4xl text-center">
+  return <SectionWrapper className="bg-background">
+      {/* Background Image with Filter */}
+      <div className="absolute inset-0">
+        <img 
+          src={audienceParty} 
+          alt="Christabel's Audience" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+      </div>
+      <div className="relative z-10 max-w-4xl text-center">
         <motion.span initial={{
         opacity: 0
       }} whileInView={{

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-import loungeGlamour from "@/assets/lounge-glamour.jpg";
-import vipGuests from "@/assets/vip-guests.jpg";
+import cocktailBar from "@/assets/cocktail-bar.jpg";
+import privateDining from "@/assets/private-dining.jpg";
 const spaceDetails = [{
   label: "Standing Capacity",
   value: "150/200"
@@ -48,10 +48,10 @@ export const SpaceSlide = () => {
         }} transition={{
           duration: 0.8
         }} className="relative aspect-[4/3] overflow-hidden rounded">
-            <img src={loungeGlamour} alt="Christabel's Lounge" className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]" />
+            <img src={cocktailBar} alt="Christabel's Bar" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <span className="absolute bottom-4 left-4 font-body text-sm text-foreground tracking-wide">
-              The Lounge
+              The Bar
             </span>
           </motion.div>
 
@@ -67,10 +67,10 @@ export const SpaceSlide = () => {
           duration: 0.8,
           delay: 0.2
         }} className="relative aspect-[4/3] overflow-hidden rounded">
-            <img src={vipGuests} alt="VIP Area" className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]" />
+            <img src={privateDining} alt="Private Dining" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <span className="absolute bottom-4 left-4 font-body text-sm text-foreground tracking-wide">
-              VIP Seating
+              Private Dining
             </span>
           </motion.div>
         </div>

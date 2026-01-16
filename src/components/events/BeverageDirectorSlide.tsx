@@ -1,0 +1,61 @@
+import { motion } from "framer-motion";
+import { SectionWrapper } from "./SectionWrapper";
+import brettWatterton from "@/assets/brett-watterton.jpg";
+
+export const BeverageDirectorSlide = () => {
+  return (
+    <SectionWrapper className="bg-gradient-section">
+      <div className="max-w-4xl w-full">
+        <motion.span
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-gold text-sm tracking-[0.3em] uppercase font-body mb-8 block text-center"
+        >
+          Beverage Director
+        </motion.span>
+
+        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-16 text-center">
+          Brett <span className="italic text-gradient-gold">Watterton</span>
+        </h2>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center"
+        >
+          {/* Photo */}
+          <div className="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold/30 mb-12">
+            <img
+              src={brettWatterton}
+              alt="Brett Watterton"
+              className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]"
+            />
+          </div>
+
+          {/* Bio */}
+          <div className="text-center max-w-2xl space-y-6">
+            <p className="text-muted-foreground font-body leading-relaxed">
+              With over a decade of global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey.
+            </p>
+            
+            <p className="text-muted-foreground font-body leading-relaxed">
+              A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the World's 50 Best Bars, and collaborated with prestigious clubs such as Soho House and The RAC Club.
+            </p>
+            
+            <p className="text-muted-foreground font-body leading-relaxed">
+              Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel's as a late-night destination for culture, creativity, and exceptional cocktails.
+            </p>
+
+            <p className="text-gold font-body leading-relaxed font-medium pt-4">
+              Brett can create bespoke cocktail menus tailored to suit your event.
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </SectionWrapper>
+  );
+};

@@ -6,6 +6,7 @@ import { EventFormatsSlide } from "@/components/events/EventFormatsSlide";
 import { BrandCollaborationsSlide } from "@/components/events/BrandCollaborationsSlide";
 import { CaseStudySlide } from "@/components/events/CaseStudySlide";
 import { EntertainmentSlide } from "@/components/events/EntertainmentSlide";
+import { BeverageDirectorSlide } from "@/components/events/BeverageDirectorSlide";
 import { ProductionSlide } from "@/components/events/ProductionSlide";
 import { PrivateHireSlide } from "@/components/events/PrivateHireSlide";
 import { AmplificationSlide } from "@/components/events/AmplificationSlide";
@@ -23,6 +24,7 @@ const EventsDeck = () => {
       <BrandCollaborationsSlide />
       <CaseStudySlide />
       <EntertainmentSlide />
+      <BeverageDirectorSlide />
       <ProductionSlide />
       <PrivateHireSlide />
       <AmplificationSlide />

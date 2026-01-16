@@ -59,8 +59,9 @@ export const StorySlide = () => {
         </h2>
         
         <div className="space-y-6 text-muted-foreground font-body text-lg leading-relaxed">
-          <p className="">Born in 2020 in the historic Fulham Town Hall, Christabel’s emerged from lockdown as London’s avant-garde antidote to conventional, affluence-obsessed members’ clubs.  
-A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets with life imitating art at every turn.  
+          <p className="">Born in 2020 in the historic Fulham Town Hall, Christabel’s emerged from lockdown as London’s avant-garde antidote to conventional, affluence-obsessed members’ clubs.
+
+A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets with life imitating art at every turn. 
 
 From Fitzrovia to Soho, including a secret club beneath the historic Windmill Theatre, Christabel’s has become a sanctuary for musicians, artists, filmmakers and bohemians rebelling against cultural homogenisation.
 

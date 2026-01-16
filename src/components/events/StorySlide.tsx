@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-
 export const StorySlide = () => {
-  return (
-    <SectionWrapper className="bg-gradient-section">
+  return <SectionWrapper className="bg-gradient-section">
       <div className="max-w-3xl text-center">
-        <motion.span
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-gold text-sm tracking-[0.3em] uppercase font-body mb-8 block"
-        >
+        <motion.span initial={{
+        opacity: 0
+      }} whileInView={{
+        opacity: 1
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.6
+      }} className="text-gold text-sm tracking-[0.3em] uppercase font-body mb-8 block">
           The Story
         </motion.span>
         
@@ -21,10 +21,7 @@ export const StorySlide = () => {
         </h2>
         
         <div className="space-y-6 text-muted-foreground font-body text-lg leading-relaxed">
-          <p>
-            Relaunched in November 2024, Christabel's is a members-led cultural club 
-            where music, cocktails, art, and conversation intertwine after dark.
-          </p>
+          <p>Relaunched in November 2024, Christabel's is a members-led cultural club where music, cocktails, art, and conversation intertwine after dark.</p>
           <p>
             We are a sanctuary for night-time tastemakers, creatives, and cultural 
             leaders—a place where ideas spark over candlelight and the city's 
@@ -42,6 +39,5 @@ export const StorySlide = () => {
           <span>Culture</span>
         </div>
       </div>
-    </SectionWrapper>
-  );
+    </SectionWrapper>;
 };

@@ -3,7 +3,6 @@ import { SectionWrapper } from "./SectionWrapper";
 import micalefEvent1 from "@/assets/micalef-event-1.jpg";
 import micalefEvent2 from "@/assets/micalef-event-2.jpg";
 import micalefPerfume from "@/assets/micalef-perfume.jpg";
-
 const outcomes = [{
   metric: "150+",
   label: "Guests Attended"
@@ -17,12 +16,13 @@ const outcomes = [{
   metric: "100%",
   label: "Brand Recall"
 }];
-
-const portraitImages = [
-  { src: micalefEvent1, alt: "Maison Micalef Launch Event" },
-  { src: micalefEvent2, alt: "Maison Micalef Event Guests" },
-];
-
+const portraitImages = [{
+  src: micalefEvent1,
+  alt: "Maison Micalef Launch Event"
+}, {
+  src: micalefEvent2,
+  alt: "Maison Micalef Event Guests"
+}];
 export const CaseStudySlide = () => {
   return <SectionWrapper className="bg-background">
       <div className="max-w-6xl w-full">
@@ -53,17 +53,11 @@ export const CaseStudySlide = () => {
         }} className="space-y-3">
             {/* Two portrait images side by side */}
             <div className="grid grid-cols-2 gap-3">
-              {portraitImages.map((image, index) => (
-                <div key={index} className="relative aspect-[3/4] overflow-hidden rounded">
-                  <img 
-                    src={image.src} 
-                    alt={image.alt} 
-                    className="w-full h-full object-contain sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" 
-                  />
+              {portraitImages.map((image, index) => <div key={index} className="relative aspect-[3/4] overflow-hidden rounded">
+                  <img src={image.src} alt={image.alt} className="w-full h-full object-contain sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/5" />
-                </div>
-              ))}
+                </div>)}
             </div>
           </motion.div>
 
@@ -88,12 +82,17 @@ export const CaseStudySlide = () => {
             <div className="space-y-6 mb-10">
               <div>
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Objective</h4>
-                <p className="text-muted-foreground font-body">Launch Christabel's premium tequila range to London's taste-making crowd with an immersive brand experience.</p>
+                <p className="text-muted-foreground font-body">Premium perfumers Maison Micalef approached Christabel’s to launch their perfume Notorious XOXO, inspired by London’s members’ clubs. We welcomed an exclusive, scene-savvy guestlist with gifting to celebrities and influencers.
+
+Execution
+
+
+ </p>
               </div>
 
               <div>
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Execution</h4>
-                <p className="text-muted-foreground font-body">Full cocktail menu takeover featuring bespoke creations, live acoustic performance from The Molotovs, guided tasting by Brett Watterton, and exclusive member access.</p>
+                <p className="text-muted-foreground font-body">Full cocktail menu takeover featuring bespoke creations, prominent brand displays including backdrop and fireplace scent station. Live acoustic performance from The Molotovs, guided tasting by Brett Watterton, and exclusive member/celebrity access.</p>
               </div>
             </div>
 
@@ -119,18 +118,19 @@ export const CaseStudySlide = () => {
         </div>
 
         {/* Perfume product image at bottom of slide */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-12 relative aspect-[21/9] overflow-hidden rounded"
-        >
-          <img 
-            src={micalefPerfume} 
-            alt="Maison Micalef Perfume" 
-            className="w-full h-full object-cover" 
-          />
+        <motion.div initial={{
+        opacity: 0,
+        y: 30
+      }} whileInView={{
+        opacity: 1,
+        y: 0
+      }} viewport={{
+        once: true
+      }} transition={{
+        duration: 0.8,
+        delay: 0.4
+      }} className="mt-12 relative aspect-[21/9] overflow-hidden rounded">
+          <img src={micalefPerfume} alt="Maison Micalef Perfume" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
         </motion.div>
       </div>

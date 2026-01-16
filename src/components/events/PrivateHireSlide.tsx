@@ -52,7 +52,20 @@ export const PrivateHireSlide = () => {
 
           {/* Options */}
           <div className="space-y-6 order-1 lg:order-2">
-            {hireOptions.map((option, index) => {})}
+            {hireOptions.map((option, index) => (
+              <motion.div
+                key={option.title}
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.15 }}
+                className="p-6 border border-gold/20 rounded bg-card/30"
+              >
+                <h3 className="font-display text-2xl text-foreground mb-2">{option.title}</h3>
+                <p className="text-gold text-sm font-body tracking-wide mb-2">{option.capacity}</p>
+                <p className="text-muted-foreground font-body">{option.description}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
 

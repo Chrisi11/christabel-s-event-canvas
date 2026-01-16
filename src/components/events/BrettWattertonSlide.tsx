@@ -54,7 +54,11 @@ export const BrettWattertonSlide = () => {
               alt="Brett Watterton"
               className="w-full h-full object-cover grayscale-[30%] contrast-[1.05] brightness-[0.85] saturate-[0.9] blur-[0.3px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6">
+              <span className="text-gold text-sm tracking-widest uppercase font-body">Beverage Director</span>
+              <p className="text-foreground font-display text-2xl mt-1">Brett Watterton</p>
+            </div>
           </motion.div>
         </div>
       </div>

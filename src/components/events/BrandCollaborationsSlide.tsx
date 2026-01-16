@@ -17,6 +17,7 @@ const collaborationOfferings = [
   "Product sampling experiences",
   "Content capture opportunities",
   "Exclusive member access",
+  "Celebrity Gifting & VIP Goodybags",
 ];
 
 export const BrandCollaborationsSlide = () => {

@@ -65,15 +65,6 @@ export const CaseStudySlide = () => {
                 </div>
               ))}
             </div>
-            {/* Perfume product image */}
-            <div className="relative aspect-[16/9] overflow-hidden rounded">
-              <img 
-                src={micalefPerfume} 
-                alt="Maison Micalef Perfume" 
-                className="w-full h-full object-cover" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-            </div>
           </motion.div>
 
           {/* Content */}
@@ -126,6 +117,22 @@ export const CaseStudySlide = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* Perfume product image at bottom of slide */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-12 relative aspect-[21/9] overflow-hidden rounded"
+        >
+          <img 
+            src={micalefPerfume} 
+            alt="Maison Micalef Perfume" 
+            className="w-full h-full object-cover" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+        </motion.div>
       </div>
     </SectionWrapper>;
 };

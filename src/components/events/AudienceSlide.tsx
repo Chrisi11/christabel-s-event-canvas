@@ -20,10 +20,7 @@ export const AudienceSlide = () => {
           The <span className="italic text-gradient-gold">Christabel's</span> Community
         </h2>
 
-        <p className="text-muted-foreground font-body text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">A highly engaged late-night audience with strong cultural influence.
-Our members are the city's most connected individuals 
-from the film, music and media industries.
-
+        <p className="text-muted-foreground font-body text-lg md:text-xl leading-relaxed mb-12 max-w-2xl mx-auto">From Marvel movie directors to heritage rockstars, our members are the city's most connected individuals from the film, music and media industries.
       </p>
 
         {/* Audience Tags */}

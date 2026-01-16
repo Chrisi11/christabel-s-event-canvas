@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-club.jpg";
+import christabelsLogo from "@/assets/christabels-logo.png";
 export const CoverSlide = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -22,9 +23,11 @@ export const CoverSlide = () => {
         duration: 1,
         delay: 0.3
       }}>
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-medium tracking-tight text-foreground text-shadow mb-6">
-            Christabel's
-          </h1>
+          <img 
+            src={christabelsLogo} 
+            alt="Christabel's" 
+            className="h-24 md:h-32 lg:h-40 w-auto mb-6"
+          />
         </motion.div>
         
         <motion.p initial={{

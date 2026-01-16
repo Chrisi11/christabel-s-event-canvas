@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import vipGuests from "@/assets/vip-guests.jpg";
 import livePerformance from "@/assets/live-performance.jpg";
+import brettWatterton from "@/assets/brett-watterton.jpg";
+
 const entertainmentTypes = ["Live Musicians", "Resident & Guest DJs", "Spoken Word Artists", "Cultural Performances", "Walk-Through Tastings"];
+
 export const EntertainmentSlide = () => {
   return <SectionWrapper className="bg-gradient-section">
       <div className="max-w-6xl w-full">
@@ -93,17 +96,24 @@ export const EntertainmentSlide = () => {
         once: true
       }} transition={{
         duration: 0.8
-      }} className="p-8 bg-gradient-card border border-border rounded text-center max-w-2xl mx-auto">
-          <span className="text-gold text-sm tracking-widest uppercase font-body mb-4 block">
-            Beverage Director
-          </span>
-          <h3 className="font-display text-3xl text-foreground mb-4">Brett Watterton</h3>
-          <p className="text-muted-foreground font-body leading-relaxed">With over a decade of global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey. 
-
- A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the World’s 50 Best Bars, and collaborated with prestigious clubs such as Soho House and The RAC Club.
-
-Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel’s as a late-night destination for culture, creativity, and exceptional cocktails.
-        </p>
+      }} className="p-8 bg-gradient-card border border-border rounded max-w-3xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden flex-shrink-0 border-2 border-gold/30">
+              <img 
+                src={brettWatterton} 
+                alt="Brett Watterton" 
+                className="w-full h-full object-cover sepia-[0.15] contrast-[1.05]" 
+              />
+            </div>
+            <div className="text-center md:text-left">
+              <span className="text-gold text-sm tracking-widest uppercase font-body mb-2 block">
+                Beverage Director
+              </span>
+              <h3 className="font-display text-3xl text-foreground mb-4">Brett Watterton</h3>
+              <p className="text-muted-foreground font-body leading-relaxed text-sm">With over a decade of global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey. Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </SectionWrapper>;

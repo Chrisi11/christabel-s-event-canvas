@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import tastemakersImage from "@/assets/tastemakers.jpg";
 import liveMusicImage from "@/assets/live-music-new.jpg";
+import membersClubImage from "@/assets/members-club-interiors.jpg";
 const spaceDetails = [{
   label: "Standing Capacity",
   value: "150/200"
@@ -67,10 +68,10 @@ export const SpaceSlide = () => {
           duration: 0.8,
           delay: 0.2
         }} className="relative aspect-[4/3] overflow-hidden rounded">
-            <img src={liveMusicImage} alt="Live Music" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
+            <img src={membersClubImage} alt="Luxurious Members' Club Interiors" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <span className="absolute bottom-4 left-4 font-body text-sm text-foreground tracking-wide">
-              Live Music
+              Luxurious Members' Club Interiors
             </span>
           </motion.div>
         </div>

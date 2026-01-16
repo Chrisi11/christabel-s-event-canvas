@@ -26,7 +26,7 @@ export const CoverSlide = () => {
           <img 
             src={christabelsLogo} 
             alt="Christabel's" 
-            className="h-24 md:h-32 lg:h-40 w-auto mb-6"
+            className="h-32 md:h-48 lg:h-64 w-auto mb-6 mx-auto"
           />
         </motion.div>
         

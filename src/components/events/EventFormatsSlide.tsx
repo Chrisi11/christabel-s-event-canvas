@@ -14,12 +14,12 @@ import {
 const eventFormats = [
   { icon: Sparkles, title: "Brand Launches", description: "Make your debut unforgettable" },
   { icon: Wine, title: "Film Premiere Afterparties", description: "Discreet Central London for after parties" },
-  { icon: Music, title: "Live Music & Showcases", description: "Intimate artist performances" },
-  { icon: Radio, title: "Listening Parties", description: "Album & single premieres" },
+  { icon: Music, title: "Live Music & Listening Parties", description: "Intimate artist performances & album premieres" },
   { icon: Mic2, title: "Panel Talks & Podcasts", description: "Cultural conversations" },
-  { icon: Palette, title: "Fashion & Beauty", description: "Activations with impact" },
-  { icon: Users, title: "Private Dinners", description: "Exclusive seated experiences" },
-  { icon: Camera, title: "Press & Influencer", description: "Industry nights with reach" },
+  { icon: Palette, title: "Fashion & Beauty Launches", description: "Activations with impact" },
+  { icon: Users, title: "Private Dinners", description: "Exclusive seated experiences by Celebrity Chef Jameson Stocks" },
+  { icon: Camera, title: "Press & Influencer Events", description: "Industry nights with reach" },
+  { icon: Radio, title: "Fashion Week Parties", description: "Exclusive after-show celebrations" },
 ];
 
 export const EventFormatsSlide = () => {

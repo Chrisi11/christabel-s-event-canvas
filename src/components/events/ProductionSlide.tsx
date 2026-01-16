@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-import { Settings, Users, Volume2, ClipboardList, Clock, Shield } from "lucide-react";
+import { Settings, Users, Volume2, ClipboardList, Clock, Shield, Camera, Newspaper } from "lucide-react";
 const productionServices = [{
   icon: Settings,
   title: "Event Production",
@@ -25,6 +25,14 @@ const productionServices = [{
   icon: Shield,
   title: "Security",
   description: "Discreet, professional door management"
+}, {
+  icon: Camera,
+  title: "Image Agency Attendance",
+  description: "Getty Images & Shutterstock photographer coverage"
+}, {
+  icon: Newspaper,
+  title: "PR Support",
+  description: "Press links with Daily Mail, Evening Standard and Metro"
 }];
 export const ProductionSlide = () => {
   return <SectionWrapper className="bg-background">

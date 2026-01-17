@@ -16,7 +16,7 @@ export const SectionWrapper = ({ children, className, id }: SectionWrapperProps)
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={cn(
-        "min-h-screen flex items-center justify-center px-6 py-20 lg:py-32",
+        "print-slide min-h-screen flex items-center justify-center px-6 py-20 lg:py-32",
         className
       )}
     >

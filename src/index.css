@@ -176,14 +176,37 @@
     margin: 0;
   }
 
-  html, body {
+  * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
     color-adjust: exact !important;
   }
 
-  body {
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
     background: hsl(20 10% 5%) !important;
+  }
+
+  /* Fix gradient text visibility in print - MUST come before general rules */
+  .text-gradient-gold {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: hsl(38 70% 55%) !important;
+    color: hsl(38 70% 55%) !important;
+  }
+
+  /* Ensure all images print correctly */
+  img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   /* Each slide becomes exactly one page */
@@ -200,6 +223,16 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    padding: 32px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Scale down content to fit print page */
+  .print-slide > * {
+    transform: scale(0.85) !important;
+    transform-origin: center center !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
   }
 
   /* Remove the last page break */
@@ -208,23 +241,29 @@
     break-after: avoid;
   }
 
-  /* Ensure backgrounds print */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-
-  /* Hide scroll indicators and animations */
-  [data-print-hide] {
+  /* Hide scroll indicators and non-print elements */
+  [data-print-hide],
+  [data-print-hide="true"] {
     display: none !important;
   }
 
-  /* Force all animated elements to be visible */
+  /* Force all framer-motion animated elements to be visible */
   [style*="opacity"] {
     opacity: 1 !important;
   }
 
-  [style*="transform"] {
+  [style*="transform"]:not(.print-slide > *) {
     transform: none !important;
+  }
+
+  /* Ensure visibility on ALL nested elements inside slides */
+  .print-slide,
+  .print-slide * {
+    visibility: visible !important;
+  }
+
+  /* Reset opacity on motion elements */
+  .print-slide [style] {
+    opacity: 1 !important;
   }
 }

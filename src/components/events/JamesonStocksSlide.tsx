@@ -28,26 +28,26 @@ export const JamesonStocksSlide = () => {
           Michelin-Starred Celebrity Chef
         </motion.span>
 
-        <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground mb-16 text-center">
+        <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-foreground mb-8 text-center">
           Jameson <span className="italic text-gradient-gold">Stocks</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid md:grid-cols-2 gap-8 items-start mb-8">
           {/* Bio */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-4"
           >
-            <p className="text-muted-foreground font-body leading-relaxed text-lg">
+            <p className="text-muted-foreground font-body leading-relaxed text-base">
               Recognised by GQ as one of the world's leading culinary talents, Jameson Stocks is a Michelin-starred chef celebrated for his inventive, boundary-pushing approach to modern cuisine.
             </p>
-            <p className="text-muted-foreground font-body leading-relaxed">
+            <p className="text-muted-foreground font-body leading-relaxed text-sm">
               With a career spanning elite kitchens across Europe and North America, he has become a sought-after chef for high-profile events, cooking for celebrities including Jeff Bezos and the Kardashians.
             </p>
-            <p className="text-muted-foreground font-body leading-relaxed">
+            <p className="text-muted-foreground font-body leading-relaxed text-sm">
               Jameson's style blends technical precision with playful creativity, producing dishes that are as visually stunning as they are unforgettable.
             </p>
           </motion.div>
@@ -58,7 +58,7 @@ export const JamesonStocksSlide = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative aspect-square overflow-hidden rounded"
+            className="relative aspect-[4/3] overflow-hidden rounded"
           >
             <img
               src={jamesonImage}
@@ -67,9 +67,9 @@ export const JamesonStocksSlide = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 via-transparent to-orange-500/5" />
-            <div className="absolute bottom-6 left-6">
-              <span className="text-gold text-sm tracking-widest uppercase font-body">Private Chef</span>
-              <p className="text-foreground font-display text-2xl mt-1">Jameson Stocks</p>
+            <div className="absolute bottom-4 left-4">
+              <span className="text-gold text-xs tracking-widest uppercase font-body">Private Chef</span>
+              <p className="text-foreground font-display text-xl mt-1">Jameson Stocks</p>
             </div>
           </motion.div>
         </div>
@@ -80,30 +80,26 @@ export const JamesonStocksSlide = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="border border-gold/20 rounded p-8 bg-card/30"
+          className="border border-gold/20 rounded p-4 bg-card/30"
         >
-          <h3 className="font-display text-2xl text-foreground mb-6 text-center">
+          <h3 className="font-display text-xl text-foreground mb-3 text-center">
             Sample <span className="italic text-gradient-gold">Menu</span>
           </h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-2">
             {sampleMenu.map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 + index * 0.05 }}
-                className="flex gap-3"
+                className="flex gap-2"
               >
                 {item.category && (
-                  <span className="text-gold text-sm font-body tracking-wide shrink-0 w-28">
+                  <span className="text-gold text-xs font-body tracking-wide shrink-0 w-24">
                     {item.category}
                   </span>
                 )}
-                <span className={`text-muted-foreground font-body text-sm ${!item.category ? 'text-center w-full text-gold' : ''}`}>
+                <span className={`text-muted-foreground font-body text-xs ${!item.category ? 'text-center w-full text-gold' : ''}`}>
                   {item.item}
                 </span>
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>

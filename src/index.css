@@ -162,4 +162,69 @@
   .text-shadow {
     text-shadow: var(--shadow-text);
   }
+
+  /* Print slide class - forces each slide to exactly one page */
+  .print-slide {
+    @apply min-h-screen;
+  }
+}
+
+/* Print styles for PDF export */
+@media print {
+  @page {
+    size: landscape;
+    margin: 0;
+  }
+
+  html, body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    background: hsl(20 10% 5%) !important;
+  }
+
+  /* Each slide becomes exactly one page */
+  .print-slide {
+    page-break-after: always;
+    page-break-inside: avoid;
+    break-after: page;
+    break-inside: avoid;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    max-height: 100vh !important;
+    width: 100vw !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Remove the last page break */
+  .print-slide:last-child {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Ensure backgrounds print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide scroll indicators and animations */
+  [data-print-hide] {
+    display: none !important;
+  }
+
+  /* Force all animated elements to be visible */
+  [style*="opacity"] {
+    opacity: 1 !important;
+  }
+
+  [style*="transform"] {
+    transform: none !important;
+  }
 }

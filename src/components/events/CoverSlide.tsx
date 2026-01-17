@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import heroImage from "@/assets/hero-club.jpg";
 import christabelsLogo from "@/assets/christabels-logo.png";
 export const CoverSlide = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="print-slide relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
       backgroundImage: `url(${heroImage})`
@@ -73,7 +73,7 @@ www.christabels.com
     }} transition={{
       duration: 1,
       delay: 1.5
-    }} className="absolute bottom-10 left-1/2 -translate-x-1/2">
+    }} className="absolute bottom-10 left-1/2 -translate-x-1/2" data-print-hide>
         <motion.div animate={{
         y: [0, 10, 0]
       }} transition={{

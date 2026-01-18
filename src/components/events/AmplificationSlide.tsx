@@ -8,7 +8,7 @@ const amplificationPoints = [
   { icon: Share2, title: "Organic Reach", description: "Amplification through member networks" },
   { icon: Camera, title: "Content Capture", description: "Professional photo & video available" },
   { icon: Newspaper, title: "Press Potential", description: "Media connections and coverage" },
-  { icon: Camera, title: "Paparazzi & Image Agencies", description: "Getty Images, Shutterstock & press photographers" },
+  { icon: Camera, title: "Paparazzi & Image Agencies", description: "Getty Images, Shutterstock & press photography partners" },
 ];
 
 export const AmplificationSlide = () => {

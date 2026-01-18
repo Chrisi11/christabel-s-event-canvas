@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-const reasons = ["Central London location, nestled between Fitzrovia, Soho and Mayfair (nearest tube: Oxford Circus)", "Late late licence until 4am — with possibility to extend to 6am", "Late licence for live music until 3am — unheard of in the capital, perfect for speakeasy style film premieres", "Press and Media Connections", "Discreet but influential", "Cultural credibility", "Late-night energy", "Highly curated guestlist", "A fully bespoke hosted experience", "London's cult members club"];
+const reasons = ["Central London location, nestled between Fitzrovia, Soho and Mayfair (nearest tube: Oxford Circus)", "Late late licence until 4am — with possibility to extend to 6am", "Late licence for live music until 3am", "Press and Media Connections", "Discreet but influential", "Cultural credibility", "Late-night energy", "Highly curated guestlist", "A fully bespoke hosted experience", "London's cult members club"];
 export const WhyChristabelsSlide = () => {
   return <SectionWrapper className="bg-gradient-section">
       <div className="max-w-4xl text-center">

@@ -4,7 +4,7 @@ import { SectionWrapper } from "./SectionWrapper";
 export const StorySlide = () => {
   return (
     <SectionWrapper className="bg-gradient-section">
-      <div className="max-w-3xl text-center">
+      <div className="max-w-3xl text-center px-4">
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -20,7 +20,7 @@ export const StorySlide = () => {
           <span className="block text-gradient-gold italic">Creative Chaos</span>
         </h2>
 
-        <div className="space-y-6 text-muted-foreground font-body text-lg leading-relaxed">
+        <div className="space-y-4 md:space-y-6 text-muted-foreground font-body text-base md:text-lg leading-relaxed">
           <p>Born in 2020 in the historic <strong>Fulham Town Hall</strong>, Christabel's emerged from lockdown as London's avant-garde antidote to conventional, affluence-obsessed members' clubs.</p>
 
           <p>A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets with life imitating art at every turn.</p>
@@ -32,7 +32,7 @@ export const StorySlide = () => {
           <p>Now, in the heart of London just by Oxford Circus, with a full band stage and late-night liquor licence, Christabel's is open again for London's wild, creative, and bohemian spirits to pick up the beat.</p>
         </div>
 
-        <div className="mt-16 flex items-center justify-center gap-8 text-muted-foreground text-sm tracking-widest uppercase font-body">
+        <div className="mt-10 md:mt-16 flex items-center justify-center gap-4 md:gap-8 text-muted-foreground text-xs md:text-sm tracking-widest uppercase font-body flex-wrap">
           <span>Music</span>
           <span className="w-1 h-1 rounded-full bg-gold" />
           <span>MEDIA</span>

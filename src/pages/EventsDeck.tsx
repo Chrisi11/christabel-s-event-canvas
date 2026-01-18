@@ -15,7 +15,6 @@ import { AmplificationSlide } from "@/components/events/AmplificationSlide";
 import { WhyChristabelsSlide } from "@/components/events/WhyChristabelsSlide";
 import { ContactSlide } from "@/components/events/ContactSlide";
 import { ImageSlide } from "@/components/events/ImageSlide";
-import { Download } from "lucide-react";
 
 import venueBar1 from "@/assets/venue-bar-1.jpg";
 import venueLounge1 from "@/assets/venue-lounge-1.jpg";
@@ -23,22 +22,8 @@ import venueBar2 from "@/assets/venue-bar-2.jpg";
 import venueFireplace from "@/assets/venue-fireplace.jpg";
 
 const EventsDeck = () => {
-  const handleDownloadPDF = () => {
-    window.print();
-  };
-
   return (
     <div className="bg-background">
-      {/* Download PDF Button */}
-      <button
-        onClick={handleDownloadPDF}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 bg-charcoal border border-gold/30 text-gold rounded-sm hover:bg-gold/10 hover:border-gold/50 transition-all duration-300 font-body text-sm tracking-wide print:hidden"
-        aria-label="Download as PDF"
-      >
-        <Download className="w-4 h-4" />
-        <span className="hidden sm:inline">Download PDF</span>
-      </button>
-
       <CoverSlide />
       <StorySlide />
       <ImageSlide src={venueBar1} alt="Christabel's Bar Interior" />

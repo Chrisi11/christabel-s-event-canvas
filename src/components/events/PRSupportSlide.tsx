@@ -6,12 +6,14 @@ const prServices = [
   {
     icon: Camera,
     title: "Image Agency Attendance",
-    description: "Getty Images & Shutterstock photographer coverage"
+    description: "<strong>Getty Images</strong> & <strong>Shutterstock</strong> photographer coverage",
+    isHtml: true
   },
   {
     icon: Newspaper,
     title: "PR Support",
-    description: "Press links with Daily Mail, Evening Standard and Metro"
+    description: "Press links with <strong>Daily Mail</strong>, <strong>Evening Standard</strong> and <strong>Metro</strong>",
+    isHtml: true
   }
 ];
 
@@ -49,7 +51,7 @@ export const PRSupportSlide = () => {
             >
               <service.icon className="w-8 h-8 text-gold mb-4" />
               <h3 className="font-display text-2xl text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted-foreground font-body">{service.description}</p>
+              <p className="text-muted-foreground font-body" dangerouslySetInnerHTML={{ __html: service.description }} />
             </motion.div>
           ))}
         </div>

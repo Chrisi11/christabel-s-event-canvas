@@ -34,7 +34,7 @@ export const BrettWattertonSlide = () => {
               With over a decade of global experience as a bar founder and consultant, Brett curates story-led cocktail programming that transforms each evening into a sensory journey.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed">
-              A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the World's 50 Best Bars, and collaborated with prestigious clubs such as Soho House and The RAC Club.
+              A bar founder, consultant, and creative force, Brett has launched multiple acclaimed venues, including one nominated for the <strong>World's 50 Best Bars</strong>, and collaborated with prestigious clubs such as <strong>Soho House</strong> and <strong>The RAC Club</strong>.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed">
               Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel's as a late-night destination for culture, creativity, and exceptional cocktails.

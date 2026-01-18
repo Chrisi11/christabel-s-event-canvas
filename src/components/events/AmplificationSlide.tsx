@@ -8,7 +8,7 @@ const amplificationPoints = [
   { icon: Share2, title: "Organic Reach", description: "Amplification through member networks" },
   { icon: Camera, title: "Content Capture", description: "Professional photo & video available" },
   { icon: Newspaper, title: "Press Potential", description: "Media connections and coverage" },
-  { icon: Camera, title: "Paparazzi & Image Agencies", description: "Getty Images, Shutterstock & press photography partners" },
+  { icon: Camera, title: "Paparazzi & Image Agencies", description: "<strong>Getty Images</strong>, <strong>Shutterstock</strong> & press photography partners", isHtml: true },
 ];
 
 export const AmplificationSlide = () => {
@@ -48,7 +48,11 @@ export const AmplificationSlide = () => {
                 <point.icon className="w-7 h-7 text-gold" />
               </div>
               <h3 className="font-display text-xl text-foreground mb-2">{point.title}</h3>
-              <p className="text-sm text-muted-foreground font-body">{point.description}</p>
+              {'isHtml' in point && point.isHtml ? (
+                <p className="text-sm text-muted-foreground font-body" dangerouslySetInnerHTML={{ __html: point.description }} />
+              ) : (
+                <p className="text-sm text-muted-foreground font-body">{point.description}</p>
+              )}
             </motion.div>
           ))}
         </div>

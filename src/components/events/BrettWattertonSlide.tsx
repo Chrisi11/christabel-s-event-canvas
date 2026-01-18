@@ -39,6 +39,9 @@ export const BrettWattertonSlide = () => {
             <p className="text-muted-foreground font-body leading-relaxed">
               Known for his innovative, culturally attuned approach, Brett combines technical mastery with creative instinct, crafting drinks that are both thoughtful and quietly disruptive. Setting the tone for Christabel's as a late-night destination for culture, creativity, and exceptional cocktails.
             </p>
+            <p className="text-gold font-body leading-relaxed border-l-2 border-gold/50 pl-4 mt-4">
+              Brett is available for premium, brand-led commissions — creating one-off cocktails and menus tailored to launches, including bespoke ingredients, branded ice, glassware, and visual storytelling.
+            </p>
           </motion.div>
 
           {/* Image with filter */}

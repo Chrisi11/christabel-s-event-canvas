@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-import { Camera, Newspaper } from "lucide-react";
+import { Camera, Newspaper, Users, Star } from "lucide-react";
 
 const prServices = [
   {
@@ -14,6 +14,18 @@ const prServices = [
     title: "PR Support",
     description: "Press links with <strong>Daily Mail</strong>, <strong>Evening Standard</strong> and <strong>Metro</strong>",
     isHtml: true
+  },
+  {
+    icon: Users,
+    title: "Influencer Marketing",
+    description: "Strategic partnerships with key influencers and content creators",
+    isHtml: false
+  },
+  {
+    icon: Star,
+    title: "Celebrity Guestlisting",
+    description: "Access to our network of celebrity contacts and talent booking",
+    isHtml: false
   }
 ];
 
@@ -39,7 +51,7 @@ export const PRSupportSlide = () => {
           Maximize your event's visibility with our established press relationships and professional photography coverage.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {prServices.map((service, index) => (
             <motion.div
               key={service.title}

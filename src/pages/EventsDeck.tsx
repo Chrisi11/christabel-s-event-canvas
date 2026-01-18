@@ -47,9 +47,9 @@ const EventsDeck = () => {
       <AudienceSlide />
       <EventFormatsSlide />
       <BrandCollaborationsSlide />
-      <ImageSlide src={venueBar2} alt="Christabel's Bar Detail" />
       <CaseStudySlide />
       <EntertainmentSlide />
+      <ImageSlide src={venueBar2} alt="Christabel's Bar Detail" />
       <BrettWattertonSlide />
       <JamesonStocksSlide />
       <ImageSlide src={venueFireplace} alt="Christabel's Fireplace Lounge" />

@@ -21,13 +21,13 @@ export const StorySlide = () => {
         </h2>
 
         <div className="space-y-6 text-muted-foreground font-body text-lg leading-relaxed">
-          <p>Born in 2020 in the historic Fulham Town Hall, Christabel's emerged from lockdown as London's avant-garde antidote to conventional, affluence-obsessed members' clubs.</p>
+          <p>Born in 2020 in the historic <strong>Fulham Town Hall</strong>, Christabel's emerged from lockdown as London's avant-garde antidote to conventional, affluence-obsessed members' clubs.</p>
 
           <p>A stage for revolution, romance, and musical mayhem, it has hosted politicians, princesses, rockstars, and poets with life imitating art at every turn.</p>
 
-          <p>From Fitzrovia to Soho, including a secret club beneath the historic Windmill Theatre, Christabel's has become a sanctuary for musicians, artists, filmmakers and bohemians rebelling against cultural homogenisation.</p>
+          <p>From Fitzrovia to Soho, including a secret club beneath the historic <strong>Windmill Theatre</strong>, Christabel's has become a sanctuary for musicians, artists, filmmakers and bohemians rebelling against cultural homogenisation.</p>
 
-          <p>Past performers and guests include: The Molotovs, Black Sabbath, Babyshambles, The Kooks, Shane McGowan, Dexy's Midnight Runners, Paul Oakenfold…</p>
+          <p>Past performers and guests include: <strong>The Molotovs</strong>, <strong>Black Sabbath</strong>, <strong>Babyshambles</strong>, <strong>The Kooks</strong>, <strong>Shane McGowan</strong>, <strong>Dexy's Midnight Runners</strong>, <strong>Paul Oakenfold</strong>…</p>
 
           <p>Now, in the heart of London just by Oxford Circus, with a full band stage and late-night liquor licence, Christabel's is open again for London's wild, creative, and bohemian spirits to pick up the beat.</p>
         </div>

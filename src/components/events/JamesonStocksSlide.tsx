@@ -42,10 +42,10 @@ export const JamesonStocksSlide = () => {
             className="space-y-4"
           >
             <p className="text-muted-foreground font-body leading-relaxed text-base">
-              Recognised by GQ as one of the world's leading culinary talents, Jameson Stocks is a Michelin-starred chef celebrated for his inventive, boundary-pushing approach to modern cuisine.
+              Recognised by <strong>GQ</strong> as one of the world's leading culinary talents, Jameson Stocks is a Michelin-starred chef celebrated for his inventive, boundary-pushing approach to modern cuisine.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed text-sm">
-              With a career spanning elite kitchens across Europe and North America, he has become a sought-after chef for high-profile events, cooking for celebrities including Jeff Bezos and the Kardashians.
+              With a career spanning elite kitchens across Europe and North America, he has become a sought-after chef for high-profile events, cooking for celebrities including <strong>Jeff Bezos</strong> and the <strong>Kardashians</strong>.
             </p>
             <p className="text-muted-foreground font-body leading-relaxed text-sm">
               Jameson's style blends technical precision with playful creativity, producing dishes that are as visually stunning as they are unforgettable.

@@ -75,29 +75,24 @@ export const CaseStudySlide = () => {
           delay: 0.2
         }}>
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-2">
-              Christabel's Launch  <span className="text-gold">x</span> Maison Micalef Parfums  
+              Christabel's Launch  <span className="text-gold">x</span> <strong>Maison Micalef Parfums</strong>  
             </h2>
             <p className="text-muted-foreground font-body mb-8">Winter 2025</p>
 
             <div className="space-y-6 mb-10">
               <div>
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Objective</h4>
-                <p className="text-muted-foreground font-body">Premium perfumers Maison Micalef approached Christabel’s to launch their perfume Notorious XOXO, inspired by London’s members’ clubs. We welcomed an exclusive, scene-savvy guestlist with gifting to celebrities and influencers.
-
-Execution
-
-
- </p>
+                <p className="text-muted-foreground font-body">Premium perfumers <strong>Maison Micalef</strong> approached Christabel's to launch their perfume Notorious XOXO, inspired by London's members' clubs. We welcomed an exclusive, scene-savvy guestlist with gifting to celebrities and influencers.</p>
               </div>
 
               <div>
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Execution</h4>
-                <p className="text-muted-foreground font-body">Full cocktail menu takeover featuring bespoke creations, prominent brand displays including backdrop and fireplace scent station. Live acoustic performance from The Molotovs, guided tasting by Brett Watterton, and exclusive member/celebrity access.</p>
+                <p className="text-muted-foreground font-body">Full cocktail menu takeover featuring bespoke creations, prominent brand displays including backdrop and fireplace scent station. Live acoustic performance from <strong>The Molotovs</strong>, guided tasting by Brett Watterton, and exclusive member/celebrity access.</p>
               </div>
 
               <div>
                 <h4 className="font-body text-sm text-gold tracking-widest uppercase mb-2">Media Impact</h4>
-                <p className="text-muted-foreground font-body">Coverage in the Daily Mail, Mail on Sunday, and Evening Standard Londoner's Diary the following day.</p>
+                <p className="text-muted-foreground font-body">Coverage in the <strong>Daily Mail</strong>, <strong>Mail on Sunday</strong>, and <strong>Evening Standard</strong> Londoner's Diary the following day.</p>
               </div>
             </div>
 

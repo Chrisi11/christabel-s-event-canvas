@@ -14,7 +14,13 @@ import { PrivateHireSlide } from "@/components/events/PrivateHireSlide";
 import { AmplificationSlide } from "@/components/events/AmplificationSlide";
 import { WhyChristabelsSlide } from "@/components/events/WhyChristabelsSlide";
 import { ContactSlide } from "@/components/events/ContactSlide";
+import { ImageSlide } from "@/components/events/ImageSlide";
 import { Download } from "lucide-react";
+
+import venueBar1 from "@/assets/venue-bar-1.jpg";
+import venueLounge1 from "@/assets/venue-lounge-1.jpg";
+import venueBar2 from "@/assets/venue-bar-2.jpg";
+import venueFireplace from "@/assets/venue-fireplace.jpg";
 
 const EventsDeck = () => {
   const handleDownloadPDF = () => {
@@ -35,14 +41,18 @@ const EventsDeck = () => {
 
       <CoverSlide />
       <StorySlide />
+      <ImageSlide src={venueBar1} alt="Christabel's Bar Interior" />
       <SpaceSlide />
+      <ImageSlide src={venueLounge1} alt="Christabel's Lounge Area" />
       <AudienceSlide />
       <EventFormatsSlide />
       <BrandCollaborationsSlide />
+      <ImageSlide src={venueBar2} alt="Christabel's Bar Detail" />
       <CaseStudySlide />
       <EntertainmentSlide />
       <BrettWattertonSlide />
       <JamesonStocksSlide />
+      <ImageSlide src={venueFireplace} alt="Christabel's Fireplace Lounge" />
       <EventProductionSlide />
       <PRSupportSlide />
       <PrivateHireSlide />

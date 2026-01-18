@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
-const reasons = ["Discreet but influential", "Cultural credibility", "Late-night energy", "Highly curated guestlist", "Not a hire space — a hosted experience", "London's cult members club"];
+const reasons = ["Discreet but influential", "Cultural credibility", "Late-night energy", "Highly curated guestlist", "A fully bespoke hosted experience", "London's cult members club"];
 export const WhyChristabelsSlide = () => {
   return <SectionWrapper className="bg-gradient-section">
       <div className="max-w-4xl text-center">

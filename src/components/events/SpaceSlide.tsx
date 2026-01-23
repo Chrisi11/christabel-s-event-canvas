@@ -49,10 +49,10 @@ export const SpaceSlide = () => {
         }} transition={{
           duration: 0.8
         }} className="relative aspect-[4/3] overflow-hidden rounded">
-            <img src={tastemakersImage} alt="Tastemakers & Gatekeepers" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
+            <img src={tastemakersImage} alt="Tastemakers & Scene-shapers" className="w-full h-full object-cover sepia-[15%] saturate-[1.1] brightness-[0.95] contrast-[1.05]" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
             <span className="absolute bottom-4 left-4 font-body text-sm text-foreground tracking-wide">
-              Tastemakers & Gatekeepers
+              Tastemakers & Scene-shapers
             </span>
           </motion.div>
 

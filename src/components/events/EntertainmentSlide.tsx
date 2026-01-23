@@ -2,6 +2,9 @@ import { motion } from "framer-motion";
 import { SectionWrapper } from "./SectionWrapper";
 import djImage from "@/assets/dj-curated.jpg";
 import liveMusic from "@/assets/live-performance.jpg";
+import burlesquePerformance1 from "@/assets/burlesque-performance-1.jpg";
+import burlesquePerformance2 from "@/assets/burlesque-performance-2.jpg";
+
 const entertainmentTypes = ["Live Musicians", "Resident & Celebrity DJs", "Vinyl & Pioneer Decks", "Burlesque Shows", "Full PA & Backline", "Dynamic Stage Lighting"];
 export const EntertainmentSlide = () => {
   return (
@@ -21,7 +24,7 @@ export const EntertainmentSlide = () => {
           Entertainment & <span className="italic text-gradient-gold">DJs</span>
         </h2>
 
-        {/* Image Grid */}
+        {/* Image Grid - 2x2 */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
@@ -50,6 +53,36 @@ export const EntertainmentSlide = () => {
             <div className="absolute bottom-6 left-6">
               <span className="text-gold text-sm tracking-widest uppercase font-body">Live Performance</span>
               <p className="text-foreground font-display text-2xl mt-1">Intimate Showcases</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative aspect-square overflow-hidden rounded"
+          >
+            <img src={burlesquePerformance1} alt="Burlesque Performance with Live Music" className="w-full h-full object-cover object-[50%_30%] sepia-[15%] saturate-[1.1] brightness-[0.85] contrast-[1.05]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6">
+              <span className="text-gold text-sm tracking-widest uppercase font-body">Burlesque</span>
+              <p className="text-foreground font-display text-2xl mt-1">Live Spectacle</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative aspect-square overflow-hidden rounded"
+          >
+            <img src={burlesquePerformance2} alt="Burlesque Dancer at Christabel's" className="w-full h-full object-cover object-[50%_20%] sepia-[15%] saturate-[1.1] brightness-[0.85] contrast-[1.05]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6">
+              <span className="text-gold text-sm tracking-widest uppercase font-body">Showgirls</span>
+              <p className="text-foreground font-display text-2xl mt-1">Feather & Glamour</p>
             </div>
           </motion.div>
         </div>
